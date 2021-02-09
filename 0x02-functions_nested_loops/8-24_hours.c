@@ -17,12 +17,12 @@ while (m <= 59)
 {
 m1 = m / 10;
 m2 = m % 10;
-putchar('0' + h1);
-putchar('0' + h2);
-putchar(':');
-putchar('0' + m1);
-putchar('0' + m2);
-putchar('\n');
+_putchar('0' + h1);
+_putchar('0' + h2);
+_putchar(':');
+_putchar('0' + m1);
+_putchar('0' + m2);
+_putchar('\n');
 m++;
 }
 m = 0;
