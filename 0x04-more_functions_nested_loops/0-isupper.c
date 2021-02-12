@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _isupper - funcion que revisa si es mayuscula
- * @c: caracter a hequiar 
+ * @c: caracter a revisar
  *
  * Return: 1 o 0
  */
