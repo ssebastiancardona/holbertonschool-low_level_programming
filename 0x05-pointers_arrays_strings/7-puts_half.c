@@ -18,8 +18,9 @@ if (i % 2 == 0)
 i = i / 2;
 while (i < 10)
 {
-putchar (*str + i);
+_putchar (*str + i);
 i++;
 }
 }
+_putchar('\n');
 }
