@@ -8,14 +8,19 @@
  */
 char *_strcat(char *dest, char *src)
 {
-int i, j;
-i = j = 0;
-while (*(dest + i))
-i++;
-while ((*(dest + i) = *(src + j)))
+int longitud;
+int j;
+longitud = 0;
+j = 0;
+while (dest[longitud] != '\0')
 {
-i++;
-j++;
+longitud++;
 }
+for ( ; src[j] != '\0'; j++)
+{
+dest[longitud] = src[j];
+longitud++;
+}
+dest[longitud + j] = '\0';
 return (dest);
 }
