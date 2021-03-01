@@ -11,6 +11,6 @@ int main(int argc, char *argv[])
 int num;
 num = 0;
 while (num != argc)
-printf("%s\n", argv[i++]);
+printf("%s\n", argv[num++]);
 return (0);
 }
