@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 	i = 1;
 	while (i < argc)
 	{
-		if (isnumber(argv[i]))
+		if (esnumero(argv[i]))
 		{
 			resul += atoi(argv[i]);
 		}
