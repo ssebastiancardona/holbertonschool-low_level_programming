@@ -8,9 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-int num;
-num = 0;
-while (num != argc)
-printf("%s\n", argv[num++]);
-return (0);
+	(void)argv;
+	printf("%d\n", (argc - 1));
+	return (0);
 }
