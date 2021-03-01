@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-int i;
+int num;
 num = 0;
 while (num != argc)
 printf("%s\n", argv[i++]);
