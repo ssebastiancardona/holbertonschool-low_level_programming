@@ -4,9 +4,9 @@
 #include <ctype.h>
 
 /**
- * esnumero - chequea si es numero o que
- *
- * @esnumero: presunto numero
+ * esnumero - chequea si es numero
+ * @esnumero: presunto
+ * @number: puntero
  * Return: 1 o 0
  */
 int esnumero(char *number)
