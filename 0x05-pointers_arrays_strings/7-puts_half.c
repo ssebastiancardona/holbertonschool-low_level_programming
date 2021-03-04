@@ -1,26 +1,36 @@
 #include "holberton.h"
+
 /**
- * puts_half - imprime la mitad de un string
- * @str: string a imprimir
+ * _strlen - retorna el tamaño
  *
- * Return: no retorna nada
+ *
+ * @s: string para sacar el tamaño
+ * Return: retorna el tamaño del string
+ */
+int _strlen(char *s)
+{
+	int i;
+
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
+}
+
+
+/**
+ * puts_half - imprime la segunda mitad del string
+ *
+ * @str: string a imprimir
+ * Return: nadita
  */
 void puts_half(char *str)
-{
-int i;
-i = 0;
-while (*(str + i))
-{
-i++;
-}
-if (i % 2 == 0)
-{
-i = i / 2;
-while (i < 10)
-{
-_putchar (*str + i);
-i++;
-}
-}
-_putchar('\n');
+{	int i;
+	i = _strlen(str);
+	if (i % 2 != 0)
+		i++;
+	i /= 2;
+	while (str[i] != '\0')
+		_putchar(str[i++]);
+	_putchar(10);
 }
