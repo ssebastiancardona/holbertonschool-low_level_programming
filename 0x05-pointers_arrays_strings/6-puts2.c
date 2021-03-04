@@ -1,39 +1,19 @@
 #include "holberton.h"
 
 /**
- * _strlen - returns the length of a given string
+ * puts2 - imprime caracter a caracter
+ * @str: string a imprimir
  *
- *
- * @s: string to check the length of
- * Return: returns the length of the string
+ * Return: nadita
  */
-int _strlen(char *s)
+void puts2(char *str)
 {
-	int i;
+	int i = 0;
 
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
-
-
-/**
- * imp - prints every other character in a string
- *
- * @str: string to print
- * Return: void
- */
-
-void imp(char *str)
-{
-	int i;
-
-	i = 0;
-	while (i < _strlen(str))
+	while (*(str + i))
 	{
-		_putchar(str[i]);
-		i += 2;
+		_putchar(*(str + i));
+		i = i + 2;
 	}
-	_putchar(10);
+	_putchar('\n');
 }
