@@ -5,7 +5,7 @@
 
 /**
  * esnumero - chequea si es numero
- * @esnumero: presunto
+ *
  * @number: puntero
  * Return: 1 o 0
  */
