@@ -1,11 +1,14 @@
-#include <stdio.h>
+#include <unistd.h>
 /**
- * main - Entra al programa principal
+ * main - Entry point
  *
- * Return: En esta ocasion retorna 1
+ * Description: Places our quote to stder
+ *
+ * Return: 1
  */
 int main(void)
 {
-printf("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+char *quote = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+write(2, quote, 59);
 return (1);
 }
