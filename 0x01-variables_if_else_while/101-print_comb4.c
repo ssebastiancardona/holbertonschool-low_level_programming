@@ -3,7 +3,7 @@
  * main - prints 00-999
  *
  * Description: Usa muchos loops
- * 
+ *
  * Return: retorna 0
  */
 int main(void)
