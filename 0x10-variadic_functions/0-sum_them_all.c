@@ -1,18 +1,14 @@
 #include <stdarg.h>
 #include"variadic_functions.h"
 /**
- * sum_them_all - suma los argumentos enviados
+ * sum_them_all - suma todos los parametros
+ * @n: numeros de parametros
  *
- * @n: numero de argumentos
- * return: retorna la suma
- *
+ * Return: la suma de todos los parametros
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	if (n == 0)
-		return (0);
 unsigned int i;
-
 int s = 0;
 va_list parametros;
 va_start(parametros, n);
