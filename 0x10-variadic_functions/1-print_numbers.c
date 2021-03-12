@@ -21,7 +21,7 @@ for (i = 0; i < n; i++)
 printf("%d", s);
 if (i < n - 1 && separator)
 {	
-	printf("%c ", *separator);
+	printf("%s ", separator);
 }
 printf("\n");
 va_end(parametros);
