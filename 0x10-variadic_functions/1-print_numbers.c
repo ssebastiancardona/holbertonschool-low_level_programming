@@ -20,6 +20,7 @@ for (i = 0; i < n; i++)
 	s = va_arg(parametros, int);
 printf("%d", s);
 if (i < n - 1 && separator)
+{	
 	printf("%c ", *separator);
 }
 printf("\n");
