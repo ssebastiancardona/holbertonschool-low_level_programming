@@ -20,3 +20,4 @@ def island_perimeter(grid):
                 if i == leng or grid[i + 1][j] != 1:
                     e += 1
     return e
+    
